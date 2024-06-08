@@ -1,9 +1,24 @@
 import './main.css'
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { auth } from './firebase';
 
 const MainSection = ({ selectedPatient }) => {
+
+ async function handleLogout(){
+
+  try{
+    await auth.signOut()
+    window.location.href=('/login')
+    localStorage.removeItem('user')
+    console.log('logout success')
+  }catch(error){
+console.error(error.message)
+
+  }
+    
  
+ }
 
   return (
     <div className='main'>
@@ -12,9 +27,9 @@ const MainSection = ({ selectedPatient }) => {
         <div style={{flex:3}}><p>PatientCare Hub</p></div>
 
 
-  <div class="dropdown">
-        <button class="btn btn-success">Settings</button>
-        <div class="dropdown-content">
+  <div className="dropdown">
+        <button className="btn btn-success">Settings</button>
+        <div className="dropdown-content">
         <div style={{display:'flex',
         flexDirection:'row'
         ,gap:'2rem',
@@ -25,7 +40,7 @@ const MainSection = ({ selectedPatient }) => {
           <p>User one</p>
         </div>
         <div>
-            <button className='btn btn-danger'>Sign out</button>
+            <button className='btn btn-danger' onClick={handleLogout}>Sign out</button>
           </div>
         
   </div>

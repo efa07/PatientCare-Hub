@@ -1,6 +1,7 @@
 import './search.css'
 import React, { useState } from 'react';
 import pro from '/public/icons/profile.png';
+import { auth } from './firebase';
 
 const SearchSection = ({ patients, onPatientSelect }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -16,6 +17,19 @@ const SearchSection = ({ patients, onPatientSelect }) => {
     patient.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  async function handleLogout(){
+
+    try{
+      await auth.signOut()
+      window.location.href=('/login')
+      localStorage.removeItem('user')
+      console.log('logout success')
+    }catch(error){
+  console.error(error.message)
+  
+    }
+      
+  }  
   return (
     <div className='search'>
       <div className="top">
@@ -23,7 +37,7 @@ const SearchSection = ({ patients, onPatientSelect }) => {
         <span className="logo"></span>
         </div>
         <div className="logout">
-          <button className="btn bg-danger" id='btn'>Log out</button>
+          <button className="btn bg-danger" id='btn' onClick={handleLogout}>Log out</button>
         </div>
         
        </div>

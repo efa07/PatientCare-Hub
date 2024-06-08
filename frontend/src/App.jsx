@@ -53,11 +53,8 @@ labResult:"lab result"
 
   return (
     <div className='test'>
-   
       <Sidebar patients={patients} onPatientSelect={handlePatientSelect} />
       <MainSection selectedPatient={selectedPatient} />
-       
-
     </div>
   );
 };

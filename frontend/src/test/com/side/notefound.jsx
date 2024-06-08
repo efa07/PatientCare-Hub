@@ -13,7 +13,7 @@ const NotFound = () => {
     
  <div className="div1">404</div>
     <div className="div2">page</div>
-    <div className="div3">note</div>
+    <div className="div3">not</div>
     <div className="div4">found</div>
 
    </div>

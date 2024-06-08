@@ -1,17 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css'
-const LoginPage = () => {
-  
+import { auth } from './firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
+const LoginPage = () => {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try{
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log("login success !");
+      window.location.href=('/')
+    } catch(error){
+      console.log(error.message);
+    }
+  }
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className='logo'>TelMed</span>
+        <span className='logo'>PatientHub</span>
         <span className='title'>Log in</span>
-        <form >
-          <input type="email" placeholder='Email' />
-          <input type="password" placeholder='Password' />
+
+        <form onSubmit={handleLogin} >
+          <input 
+          type="email"
+           placeholder='Email' 
+           value={email}
+           onChange={(e) => setEmail(e.target.value)}
+           />
+          <input
+           type="password" 
+           placeholder='Password'
+           value={password}
+            onChange={(e) => setPassword(e.target.value)}
+           />
           <button className='btn btn-primary'>Log in</button>
           <p>Don't hava account ? <Link to='/signup'>Sign up</Link></p>
         </form>

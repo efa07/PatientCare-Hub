@@ -23,7 +23,7 @@
         top:5rem;
         left: 5rem;
         border: 1px solid black;
-        animation: moveInCircle 10s linear infinite;
+        animation: moveInCircle 5s linear infinite;
     }
     .div2 {
         position: absolute;
@@ -32,7 +32,7 @@
         top:5rem;
         left: 15rem;
         border: 1px solid black;
-        animation: moveInCircle 10s linear infinite;
+        animation: moveInCircle 3s linear infinite;
         }
     .div3{
         position: absolute;
@@ -41,7 +41,7 @@
         top:15rem;
         left: 20rem;
         border: 1px solid black;
-        animation: moveInCircle 10s linear infinite;
+        animation: moveInCircle 7s linear infinite;
     }
     .div4 {
         position: absolute;
@@ -78,29 +78,35 @@
             transform: translate(75px, 0); 
             border-radius: 50%; 
             border: 1px solid blue;
+            
         }
     }
 
     @keyframes Border {
         0% {
-            border-radius: 50%; 
+            
             border: 1px solid red;
+            background-color: red;
         }
         25% {
-            border-radius: 0%; 
+            
             border: 1px solid gold;
+            background-color:  gold;
         }
         50% {
-            border-radius: 50%; 
+           
             border: 1px solid violet;
+            background-color: violet;
         }
         75% {
-            border-radius: 0%; 
-            border: 1px solid green
+             
+            border: 1px solid green;
+            background-color: green;
         };
         100% {
-            border-radius: 50%; 
+           
             border: 1px solid blue;
+            background-color: blue;
     }
 
 }
