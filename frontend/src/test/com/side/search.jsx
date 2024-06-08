@@ -20,7 +20,7 @@ const SearchSection = ({ patients, onPatientSelect }) => {
     <div className='search'>
       <div className="top">
         <div className="logo1">
-        <span className="logo">MyDoc</span>
+        <span className="logo"></span>
         </div>
         <div className="logout">
           <button className="btn bg-danger" id='btn'>Log out</button>

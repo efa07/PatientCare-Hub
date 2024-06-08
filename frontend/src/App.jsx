@@ -3,8 +3,6 @@ import Sidebar from './test/com/side/side';
 import './App.css'
 import MainSection from './test/com/side/main';
 import img from "/public/re.png"
-import LoginPage from './test/com/side/login.jsx';
-import SignUp from './test/com/side/signup.jsx';
 
 const App = () => {
   let currentDate = new Date();
@@ -25,29 +23,30 @@ const App = () => {
     phone:1234567890,
     date:currentDate.toDateString(),
   }, 
-  {id:0,name:'Bilal',
+  {id:1,name:'Bilal',
   lastName:"two",
   img:img,
-  age:23,
+  age:33,
   addres:"testing",
   phone:1234567890,
   date:currentDate.toDateString(),
 },
-{id:0,name:'Adeel',
+{id:2,name:'Adeel',
 lastName:"three",
 img:img,
-age:23,
+age:54,
 addres:"testing",
-phone:1234567890,
+phone:54354235,
 date:currentDate.toDateString(),
 },
-{id:0,name:'christian',
+{id:3,name:'christian',
 lastName:"fore",
 img:img,
 age:23,
 addres:"testing",
-phone:1234567890,
+phone:45325345,
 date:currentDate.toDateString(),
+labResult:"lab result"
 },
     
   ];

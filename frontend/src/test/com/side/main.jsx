@@ -1,6 +1,5 @@
 import './main.css'
 import React from 'react';
-import img from "/public/re.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainSection = ({ selectedPatient }) => {
@@ -37,13 +36,23 @@ const MainSection = ({ selectedPatient }) => {
         <div>
           <div className="container bg-success">
             <div className="patientInfo">
+
               <div className="patientImg">
-              <img src={selectedPatient.img} alt="" />
-              </div>
-              <div className="patientdata">
-                <h3>{selectedPatient.name } {selectedPatient.lastName}</h3>
-              </div>
-              
+                  <img src={selectedPatient.img} alt="" />
+                </div>
+                  <div className="patientdata">
+                    <span>ID: {selectedPatient.id}</span>
+                    <span>Full Name: {selectedPatient.name } {selectedPatient.lastName}</span>
+                    <span>Age: {selectedPatient.age}</span>
+                    <span>Addres: {selectedPatient.addres}</span>
+                    <span>Phone: {selectedPatient.phone}</span>
+                    <span>Date: {selectedPatient.date}</span>
+                  </div>  
+
+              <div className="history">
+                <h2>History</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque veniam velit quas nemo eius numquam ipsum doloribus, nihil consectetur, deleniti cupiditate delectus sunt nulla fugiat corrupti sit assumenda explicabo.</p>
+                </div>    
           </div>
             </div>
 
@@ -82,7 +91,8 @@ const MainSection = ({ selectedPatient }) => {
           </div>
         </div>
       )}
-      {!selectedPatient && <p>Select a patient to view details</p>}
+
+      {!selectedPatient && <p style={{position:"absolute",top:'50%',left:'50%',fontSize:'2rem'}}>Select a patient to view details</p>}
     </div>
   );
 };

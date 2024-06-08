@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './signup.css'
+import { Link } from 'react-router-dom';
+
 const SignUp = () => {
  
 
@@ -22,7 +24,8 @@ const SignUp = () => {
             <input type="file" className='file' id='file' />
 
             <button className='btn btn-primary'>Sign up</button>
-            <p>Have an account ? Log in</p>
+            <p>Have an account ? <Link to="/login">Log in</Link>
+</p>
           </form>
         </div>
       </div>

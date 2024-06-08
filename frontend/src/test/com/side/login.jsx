@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './login.css'
 const LoginPage = () => {
   
@@ -13,6 +13,7 @@ const LoginPage = () => {
           <input type="email" placeholder='Email' />
           <input type="password" placeholder='Password' />
           <button className='btn btn-primary'>Log in</button>
+          <p>Don't hava account ? <Link to='/signup'>Sign up</Link></p>
         </form>
       </div>
     </div>

@@ -1,0 +1,107 @@
+.con{
+    height: 80vh;
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    overflow: hidden; /* Ensure content stays within the container */
+
+    flex-direction: column;
+    animation: Border 10s linear infinite;
+
+   
+
+} 
+
+    .div1 {
+        position: absolute;
+        width:10rem;  
+        height: 10rem; 
+        top:5rem;
+        left: 5rem;
+        border: 1px solid black;
+        animation: moveInCircle 10s linear infinite;
+    }
+    .div2 {
+        position: absolute;
+        width:10rem;  
+        height: 10rem; 
+        top:5rem;
+        left: 15rem;
+        border: 1px solid black;
+        animation: moveInCircle 10s linear infinite;
+        }
+    .div3{
+        position: absolute;
+        width:10rem;  
+        height: 10rem; 
+        top:15rem;
+        left: 20rem;
+        border: 1px solid black;
+        animation: moveInCircle 10s linear infinite;
+    }
+    .div4 {
+        position: absolute;
+        width:10rem;  
+        height: 10rem; 
+        top:15rem;
+        left: 10rem;
+        border: 1px solid black;
+        animation: moveInCircle 10s linear infinite;
+        }
+
+    @keyframes moveInCircle {
+        0% {
+            transform: translate(75px, 0);
+            border-radius: 50%; 
+            border: 1px solid red;
+        }
+        25% {
+            transform: translate(150px, 75px); 
+            border-radius: 0%;
+            border: 1px solid gold;
+        }
+        50% {
+            transform: translate(75px, 150px); 
+            border-radius: 50%; 
+            border: 1px solid greenyellow;
+        }
+        75% {
+            transform: translate(0, 75px); 
+            border-radius: 0%; 
+            border: 1px solid pink;
+        }
+        100% {
+            transform: translate(75px, 0); 
+            border-radius: 50%; 
+            border: 1px solid blue;
+        }
+    }
+
+    @keyframes Border {
+        0% {
+            border-radius: 50%; 
+            border: 1px solid red;
+        }
+        25% {
+            border-radius: 0%; 
+            border: 1px solid gold;
+        }
+        50% {
+            border-radius: 50%; 
+            border: 1px solid violet;
+        }
+        75% {
+            border-radius: 0%; 
+            border: 1px solid green
+        };
+        100% {
+            border-radius: 50%; 
+            border: 1px solid blue;
+    }
+
+}
+    
