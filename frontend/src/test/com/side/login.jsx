@@ -19,7 +19,10 @@ const LoginPage = () => {
     }
   }
   return (
-    <div className="formContainer">
+    <>
+    <div className="con2">
+
+      <div className="formContainer">
       <div className="formWrapper">
         <span className='logo'>PatientHub</span>
         <span className='title'>Log in</span>
@@ -42,6 +45,14 @@ const LoginPage = () => {
         </form>
       </div>
     </div>
+    
+    <div className='illustration'>
+      <img src="public/Login-amico.png" alt="" />
+    </div>
+    </div>
+    
+    </>
+    
   );
 }
 

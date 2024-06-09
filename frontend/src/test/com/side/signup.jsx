@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './signup.css';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth ,db} from './firebase';
 import {setDoc, doc} from 'firebase/firestore';
@@ -28,7 +28,8 @@ const SignUp = () => {
         });
       }
       console.log("signup success !");
-      toast.success("Signup success !", {autoClose: 2000,position:'top-center'});
+      <Navigate to='/login'/>
+      
     
     } catch(error) {
       console.log(error.message);
@@ -43,9 +44,10 @@ const SignUp = () => {
 
   return (
     <>
+    <div className="con2">
       <div className="formContainer">
         <div className="formWrapper">
-          <span className='logo'>TelMed</span>
+          <span className='logo'>Patient Hub</span>
           <span className='title'>Register</span>
 
           <form onSubmit={handleRegister}>
@@ -86,9 +88,16 @@ const SignUp = () => {
 
             <button className='btn btn-primary'>Sign up</button>
             <p>Have an account? <Link to="/login">Log in</Link></p>
+            
           </form>
         </div>
       </div>
+
+      <div className='illustration'>
+      <img src="public/Sign up-amico.png" alt="" />
+    </div>
+    </div>
+      
     </>
   );
 }

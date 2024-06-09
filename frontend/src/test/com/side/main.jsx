@@ -79,7 +79,6 @@ console.error(error.message)
       <th scope="col">Lab result</th>
       <th scope="col">Diagnosis</th>
       <th scope="col">Status</th>
-      <th scope="col">Hisrory</th>
       <th scope="col">Prescription</th>
       <th scope="col">Action</th>
       <th scope="col">Action</th>
@@ -91,7 +90,6 @@ console.error(error.message)
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
-      <td>testing</td>
       <td>testing</td>
       <td>testing</td>
       <td>testing</td>

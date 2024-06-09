@@ -11,8 +11,9 @@ import SignUp from './test/com/side/signup.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
-    <Router>
+<>
+<div className='con2'>
+      <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUp />} />
@@ -21,5 +22,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Routes>
       </Router>
       <ToastContainer />
+</div>
+
+</>
+
   </React.StrictMode>,
 )

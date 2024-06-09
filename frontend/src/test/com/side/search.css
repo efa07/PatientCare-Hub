@@ -29,6 +29,11 @@
         gap: 1rem;
         margin-bottom: 0.7rem;
     }
+    li:hover{
+        background-color: rgb(31, 161, 90);
+        border: none;
+        outline: none;
+    }
         .top{
             display: flex;
             justify-content: space-between;
