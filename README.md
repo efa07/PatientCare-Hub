@@ -67,6 +67,19 @@ Copy code
 #### git push origin feature-branch
 Submit a pull request.
 
+## Sample
+### /login
+![Example Image](readMeImg/login.png)
+
+### /signup
+![sign img](readMeImg/sign.png)
+
+### /Home
+![Example Image](readMeImg/home.png)
+
+### /
+![Example Image](readMeImg/sample.png)
+
 Contact
 For any questions or suggestions, please contact:
 
