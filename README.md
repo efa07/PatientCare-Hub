@@ -9,6 +9,10 @@ PatientCare-Hub is a React web application designed to store patient data and al
 ## Pages and Routes
 #### Login Page: /login
 
+## Upcoming Features
+#### Realtime chat between doctor and patient
+#### Video chat 
+
 Allows existing users (doctors) to log in to the application.
 #### Signup Page: /signup
 
