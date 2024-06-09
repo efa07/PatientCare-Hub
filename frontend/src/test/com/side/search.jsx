@@ -34,7 +34,7 @@ const SearchSection = ({ patients, onPatientSelect }) => {
     <div className='search'>
       <div className="top">
         <div className="logo1">
-        <span className="logo"></span>
+          <img src="/public/icon.png"/>
         </div>
         <div className="logout">
           <button className="btn bg-danger" id='btn' onClick={handleLogout}>Log out</button>

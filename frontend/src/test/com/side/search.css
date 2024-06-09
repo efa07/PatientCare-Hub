@@ -43,6 +43,18 @@
             height: 3rem;
             padding: 10px 20px;
 
+            .logo1{
+                width: 3rem;
+                height: 3rem;
+                margin-top: 1rem;
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                    object-fit: cover;
+                    border: 50%;
+                }
+            }
+
             button{
                 margin-top: 1rem;
             }
