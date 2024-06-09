@@ -6,6 +6,7 @@
 .test{
   display: flex;
   color: white;
+  width: 100vw;
   background-color: #2e3944;
   
 }
