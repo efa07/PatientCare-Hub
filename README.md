@@ -30,7 +30,7 @@ To run this project locally, follow these steps:
 
 sh
 Copy code
-git clone https://github.com/yourusername/PatientCare-Hub.git/
+git clone https://github.com/efa07/PatientCare-Hub
 #### Navigate to the project directory:
 
 sh
