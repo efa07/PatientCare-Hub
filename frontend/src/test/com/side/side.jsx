@@ -1,4 +1,3 @@
-// import Nav from './nav';
 import React from 'react';
 import SearchSection from './search';
 import './side.css'

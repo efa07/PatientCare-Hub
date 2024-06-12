@@ -1,113 +1,101 @@
-.con{
+.con {
     height: 80vh;
-    border: 1px solid black;
+    width: 90vw;
     display: flex;
-    position: relative;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    border-radius: 1rem;
     color: black;
     font-size: 2rem;
-    overflow: hidden; /* Ensure content stays within the container */
-
-    flex-direction: column;
+    overflow: hidden;
+    box-shadow: -15px 15px;
     animation: Border 10s linear infinite;
-
-   
-
 } 
 
-    .div1 {
-        position: absolute;
-        width:10rem;  
-        height: 10rem; 
-        top:5rem;
-        left: 5rem;
-        border: 1px solid black;
-        animation: moveInCircle 5s linear infinite;
-    }
-    .div2 {
-        position: absolute;
-        width:10rem;  
-        height: 10rem; 
-        top:5rem;
-        left: 15rem;
-        border: 1px solid black;
-        animation: moveInCircle 3s linear infinite;
-        }
-    .div3{
-        position: absolute;
-        width:10rem;  
-        height: 10rem; 
-        top:15rem;
-        left: 20rem;
-        border: 1px solid black;
-        animation: moveInCircle 7s linear infinite;
-    }
-    .div4 {
-        position: absolute;
-        width:10rem;  
-        height: 10rem; 
-        top:15rem;
-        left: 10rem;
-        border: 1px solid black;
-        animation: moveInCircle 10s linear infinite;
-        }
-
-    @keyframes moveInCircle {
-        0% {
-            transform: translate(75px, 0);
-            border-radius: 50%; 
-            border: 1px solid red;
-        }
-        25% {
-            transform: translate(150px, 75px); 
-            border-radius: 0%;
-            border: 1px solid gold;
-        }
-        50% {
-            transform: translate(75px, 150px); 
-            border-radius: 50%; 
-            border: 1px solid greenyellow;
-        }
-        75% {
-            transform: translate(0, 75px); 
-            border-radius: 0%; 
-            border: 1px solid pink;
-        }
-        100% {
-            transform: translate(75px, 0); 
-            border-radius: 50%; 
-            border: 1px solid blue;
-            
-        }
-    }
-
-    @keyframes Border {
-        0% {
-            
-            border: 1px solid red;
-            background-color: red;
-        }
-        25% {
-            
-            border: 1px solid gold;
-            background-color:  gold;
-        }
-        50% {
-           
-            border: 1px solid violet;
-            background-color: violet;
-        }
-        75% {
-             
-            border: 1px solid green;
-            background-color: green;
-        };
-        100% {
-           
-            border: 1px solid blue;
-            background-color: blue;
-    }
-
+.div1, .div2, .div3, .div4 {
+    position: absolute;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    border: 1px solid black;
+    animation: moveInCircle infinite;
 }
-    
+
+.div1 {
+    top: 5rem;
+    left: 5rem;
+    animation-duration: 5s;
+}
+
+.div2 {
+    top: 5rem;
+    left: 15rem;
+    animation-duration: 3s;
+}
+
+.div3 {
+    top: 15rem;
+    left: 20rem;
+    animation-duration: 7s;
+}
+
+.div4 {
+    top: 15rem;
+    left: 10rem;
+    animation-duration: 10s;
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: translate(75px, 0);
+        border-radius: 50%; 
+        border: 1px solid rgba(236, 43, 43, 0.877);
+    }
+    25% {
+        transform: translate(150px, 75px); 
+        border-radius: 0%;
+        border: 1px solid gold;
+    }
+    50% {
+        transform: translate(75px, 150px); 
+        border-radius: 50%; 
+        border: 1px solid greenyellow;
+    }
+    75% {
+        transform: translate(0, 75px); 
+        border-radius: 0%; 
+        border: 1px solid pink;
+    }
+    100% {
+        transform: translate(75px, 0); 
+        border-radius: 50%; 
+        border: 1px solid blue;
+    }
+}
+
+@keyframes Border {
+    0% {
+        border: 1px solid red;
+        background-color: red;
+    }
+    25% {
+        border: 1px solid gold;
+        background-color: gold;
+    }
+    50% {
+        border: 1px solid violet;
+        background-color: violet;
+    }
+    75% {
+        border: 1px solid green;
+        background-color: green;
+    }
+    100% {
+        border: 1px solid blue;
+        background-color: blue;
+    }
+}

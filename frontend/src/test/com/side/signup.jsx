@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './signup.css';
 import { Link, Navigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth ,db} from './firebase';
@@ -90,6 +89,7 @@ const SignUp = () => {
             <p>Have an account? <Link to="/login">Log in</Link></p>
             
           </form>
+        
         </div>
       </div>
 

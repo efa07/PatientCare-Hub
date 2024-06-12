@@ -48,11 +48,45 @@ phone:45325345,
 date:currentDate.toDateString(),
 labResult:"lab result"
 },
+{id:0,name:'choudhary',
+lastName:"one",
+img:img,
+age:23,
+addres:"testing",
+phone:1234567890,
+date:currentDate.toDateString(),
+}, 
+{id:1,name:'Bilal',
+lastName:"two",
+img:img,
+age:33,
+addres:"testing",
+phone:1234567890,
+date:currentDate.toDateString(),
+},
+{id:2,name:'Adeel',
+lastName:"three",
+img:img,
+age:54,
+addres:"testing",
+phone:54354235,
+date:currentDate.toDateString(),
+},
+{id:3,name:'christian',
+lastName:"fore",
+img:img,
+age:23,
+addres:"testing",
+phone:45325345,
+date:currentDate.toDateString(),
+labResult:"lab result"
+},
     
   ];
 
   return (
     <div className='test'>
+      
       <Sidebar patients={patients} onPatientSelect={handlePatientSelect} />
       <MainSection selectedPatient={selectedPatient} />
     </div>
