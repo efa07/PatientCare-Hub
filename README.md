@@ -27,44 +27,39 @@ Not Found Page: Displays when an invalid URL is accessed.
 To run this project locally, follow these steps:
 
 #### Clone the repository:
-
-sh
-Copy code
+```
 git clone https://github.com/efa07/PatientCare-Hub
+```
 #### Navigate to the project directory:
-
-sh
-Copy code
+```
 cd PatientCare-Hub
+```
 #### Install dependencies:
-
-sh
-Copy code
+```
 npm install
+```
 #### Start the development server:
-
-sh
-Copy code
+```
 npm start
+```
 The application will be available at http://localhost:3000.
-
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
 #### Fork the repository.
 #### Create a new branch:
-sh
-Copy code
+```
 git checkout -b feature-branch
+```
 #### Make your changes and commit them:
-sh
-Copy code
+```
 git commit -m 'Add some feature'
+```
 #### Push to the branch:
-sh
-Copy code
-#### git push origin feature-branch
+```
+git push origin feature-branch
+```
 Submit a pull request.
 
 ## Sample
