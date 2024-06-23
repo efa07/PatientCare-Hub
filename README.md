@@ -48,6 +48,7 @@ The application will be available at http://localhost:3000.
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
 #### Fork the repository.
+
 #### Create a new branch:
 ```
 git checkout -b feature-branch
